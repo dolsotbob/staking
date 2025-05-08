@@ -1,0 +1,25 @@
+{
+  "name": "staking",
+  "version": "1.0.0",
+  "description": "지갑 생성 + Faucet 기능이 있는 기존 블로그에  스테이킹 기능 Dapp 추가  (가능하면 NFT 만들어 홀드하면 staking 비율 더 높아지도록)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.20",
+    "chai": "^4.5.0",
+    "hardhat": "^2.24.0",
+    "typechain": "^8.3.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.3.0",
+    "ethers": "^6.14.0"
+  }
+}
