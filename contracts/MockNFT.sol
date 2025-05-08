@@ -10,7 +10,7 @@ contract MockNFT is ERC721, Ownable {
     constructor(
         string memory name,
         string memory symbol
-    ) ERC721(name, symbol) {}
+    ) ERC721(name, symbol) Ownable(msg.sender) {}
 
     function mint(address to, uint256 count) external onlyOwner {
         for (uint256 i = 0; i < count; i++) {

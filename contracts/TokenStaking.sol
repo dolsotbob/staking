@@ -88,6 +88,7 @@ contract TokenStaking is Ownable {
             // NFT를 가지고 있으면 보상 2배
             if (
                 address(rewardNFT) != address(0) &&
+                // rewardNFT>balancOf(user)는 사용자가 소유한 해당 NFT 개수
                 rewardNFT.balanceOf(user) > 0
             ) {
                 rate *= 2;
